@@ -6,6 +6,10 @@ import soccerUrl from './soccerball.png';
 let dino = document.querySelector("#dino");
 let donkey = document.querySelector("#donkey")
 
+dino.style.backgroundImage = `url(${dinoUrl})`;
+donkey.style.backgroundImage = `url(${donkeyUrl})`;
+
+
 let game = document.querySelector("#game")
 
 game.addEventListener("mousemove", function (event) {
@@ -13,7 +17,8 @@ game.addEventListener("mousemove", function (event) {
   donkey.style.right = `${event.offsetX}px`;
 });
 
-let ball = document.querySelector("#ball")
+let ball = document.querySelector("#ball");
+ball.style.backgroundImage = `url(${soccerUrl})`
 let y =0;
 let x = 0;
 function animateball() {
