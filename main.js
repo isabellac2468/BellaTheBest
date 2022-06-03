@@ -1,5 +1,7 @@
 import './style.css'
-
+import dino from './dino.png';
+import donkey from './donkey.png';
+import soccer from './soccerball.png';
 
 let dino = document.querySelector("#dino");
 let donkey = document.querySelector("#donkey")
