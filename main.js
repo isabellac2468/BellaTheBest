@@ -21,12 +21,22 @@ let ball = document.querySelector("#ball");
 ball.style.backgroundImage = `url(${soccerUrl})`
 let y =0;
 let x = 0;
+let vx = 2
 function animateball() {
 y += 1;
-x += 1;
+x += vx;
   ball.style.top = `${y}px`
   ball.style.left = `${x}px`
   requestAnimationFrame(animateball);
 }
+
+let button = document.querySelector('#reset');
+button.addEventListener(
+  'click',
+  function () {
+    x=0;
+    y=0;
+  }
+)
 
 animateball();
