@@ -7,25 +7,50 @@
   </head>
   <body>
     <script type="module" src="/main.js"></script>
+   <button onclick="y=0;x=0;">Reset</button>
+<br><div id="game" style="
+            margin: auto;
+            width: 700px;
+            height: 500px;
+            background-color: green;
+            position: relative;
+            border: 1px solid green;
+            ">
+      <div id="dino" style="
+                  background-image : url('/dino.png');
+                  background-size: 32px 32px;
+                  background-position: 0;
+                  width: 32px;
+                  height: 32px;
+                  position: absolute;
+                  left: 5px;
+                  bottom: 250px
+                  
+        ">
+      </div>
+      <div id="donkey" style="
+                    background-image : url('/donkey.png');
+                    background-size: 33px 33px;
+                    background-position: 0;
+                    width: 33px;
+                    height: 33px;
+                    position: absolute;
+                    right: 5px;
+                    bottom: 250px;
+        ">
+      </div>
+      <div id="ball" style="
+                  background-image : url('/soccerball.png');
+                  background-size: 32px 32px;
+                  background-position: 0;
+                  width: 32px;
+                  height: 32px;
+                  position: absolute;
+                  left: 5px;
+                  bottom: 100px
+                  
+        ">
+      </div>
+    </div>
   </body>
 </html>
-
-<div id="sprite"
-  style="
-    background-image : url('/dino.png');
-    backgroud-size: 32px 32px;
-    background-position: 0;
-    width: 32px;
-    height: 32px;
-  "
-></div>
-
-<div id="sprite"
-  style="
-    background-image : url('/donkey.png');
-    backgroud-size: 33px 33px;
-    background-position: 0;
-    width: 33px;
-    height: 33px;
-  "
-></div>
